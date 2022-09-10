@@ -1,13 +1,7 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[26]:
-
-
 import ctypes
 import numpy as np
 import os
-z=os.listdir("D:/Pictures/slideshow")
+fpath=""#add your wallpaper folder here
+z=os.listdir(fpath)
 path=z[np.random.randint(len(z))]
-ctypes.windll.user32.SystemParametersInfoW(20, 0, "D:/Pictures/slideshow/"+path , 0)
-
+ctypes.windll.user32.SystemParametersInfoW(20, 0, fpath+path , 0)
