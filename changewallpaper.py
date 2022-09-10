@@ -14,7 +14,7 @@ try:#write a quote on the image if it is fetched succesfully
     r=requests.get(l)
     r=r.json()
     text=r["content"]+" - "+r["author"]
-    I1.text((10,z.size[1]-int(20*z.size[0]/1920)-20), text, font=myFont, fill =(255, 255, 255))
+    I1.text((10,z.size[1]-int(30*z.size[0]/1920)-20), text, font=myFont, fill =(255, 255, 255))
 except:
     True
     
