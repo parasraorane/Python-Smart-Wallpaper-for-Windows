@@ -21,8 +21,7 @@ except:
 try:#save as jpg
     path="path/to/save/the/wallpaper/with/quotes/in/jpg/format.jpg"
     z.save(path)
-    ctypes.windll.user32.SystemParametersInfoW(20, 0, path , 0)
 except:#or save as png
     path="path/to/save/the/wallpaper/with/quotes/in/png/format.png"
     z.save(path)
-    ctypes.windll.user32.SystemParametersInfoW(20, 0, path , 0)
+ctypes.windll.user32.SystemParametersInfoW(20, 0, path , 0)
