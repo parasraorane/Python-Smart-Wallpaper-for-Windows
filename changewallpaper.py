@@ -65,12 +65,12 @@ try:#write a quote on the image if it is fetched succesfully
     ticpos=10
     for i,j in tickers:
         chn,pc=ret_change(i)
-        I1.text((1680,ticpos),j, font=myFont, fill =(255,255,255))
+        I1.text((1670,ticpos),j, font=myFont, fill =(255,255,255))
         if chn>=0:
-            I1.text((1760,ticpos),str(chn), font=myFont, fill =(0,255,0))
+            I1.text((1750,ticpos),str(chn)+"%", font=myFont, fill =(0,255,0))
             I1.text((1830,ticpos),str(pc), font=myFont, fill =(0,255,0))
         else:
-            I1.text((1760,ticpos),str(abs(chn)), font=myFont, fill =(255,0,0))
+            I1.text((1750,ticpos),str(abs(chn))+"%", font=myFont, fill =(255,0,0))
             I1.text((1830,ticpos),str(pc), font=myFont, fill =(255,0,0))
         ticpos+=25
 except:
